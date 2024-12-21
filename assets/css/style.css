@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Slabo 13px", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-box {
+    flex: 1 1 18%;
+    text-align: center;
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+}
+
+.image-box p {
+    position: absolute;
+    /* bottom: 10px; */
+    left: 50%;
+    transform: translateX(-50%);
+    /* color: white; */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.map_img img {
+    height: 200px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .image-box {
+        flex: 1 1 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-box {
+        flex: 1 1 100%;
+    }
+}
+.containerr {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.containerrr{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 38px;
+    padding-bottom: 0px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .containerr {
+        flex-direction: column;  /* Stacks the divs vertically on small screens */
+        align-items: center;  /* Centers the items */
+    }
+
+    .first-div, .second-div {
+        flex: 1 1 100%;  /* Each div takes up 100% of the container width */
+        padding: 20px 0;
+    }
+
+    .heading {
+        font-size: 28px;  /* Adjusts the font size on smaller screens */
+    }
+
+    .text_red {
+        font-size: 16px;  /* Reduces the font size for better readability on small screens */
+    }
+}
+
+/*third*/
+.containerr {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    /* padding-top: 80px; */
+    gap: 20px;
+}
+
+.first-div {
+    flex: 0 0 30%;  /* Takes up 30% of the container */
+    padding: 10px;
+    /* background-color: #f1f1f1; */
+}
+
+.second-div {
+    flex: 0 0 70%;  /* Takes up 70% of the container */
+    padding: 10px;
+    /* background-color: #d1e7ff; */
+}
+
+@media (max-width: 768px) {
+    .first-div, .second-div {
+        flex: 1 1 100%;  /* On smaller screens, each div takes full width */
+    }
+}
+
+/*third*/
+
+/* Three divs with image, paragraph, and button */
+.three-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 0px;
+}
+
+.three-columns .col {
+    flex: 1;
+    min-width: 300px; /* Ensure responsiveness */
+    background-color: #f4f4f4;
+    /* padding: 20px; */
+    border-radius: 8px;
+    /* text-align: center; */
+}
+
+.three-columns .col img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    /* border-radius: 8px; */
+}
+
+.three-columns .col p {
+    margin: 20px 0;
+    color: #333;
+}
+
+.three-columns .col button {
+    color: #ab3c3c;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.three-columns .col button:hover {
+    color: #0056b3;
+}
+
+.text_red{
+    color: #ab3c3c;
+}
+.heading{
+    color: #ab3c3c;
+}
+.first_section{
+    background-color: #314b58;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.heading_white{
+    color: white;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 850px)  {
+    .image-box{
+        padding-bottom: 30px;
+    }
+}
